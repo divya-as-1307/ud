@@ -16,6 +16,10 @@ body {
     border-bottom: solid black 1px;
     gap:10px;
     align-items: center;
+    position:sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 
 }
 
@@ -33,15 +37,18 @@ body {
     gap: 10px;
     align-items: center;
     font-size: 16px;
+   
 }
 
 .navbar__s2 input {
     border: none;
-    width: 100%
+    width: 100%;
+    background-color: transparent;
 }
 
 .navbar__s2 input:focus{
     outline: none;
+    
 }
 
 .navbar__s3{ 
@@ -49,6 +56,27 @@ body {
     flex-wrap: wrap;
 gap: 20px;
 align-items: center;
+}
+
+.my-learnings{
+    position:relative;
+    cursor: pointer;
+}
+
+.my-learnings__popup{
+    position:absolute;
+    padding:15px;
+    border: solid black 1px;
+    background-color: white;
+    top:150%;
+width:100px;
+right:0;
+display:none;
+}
+
+.my-learnings:hover .my-learnings__popup{
+    display: block;
+
 }
 
 .categories
@@ -66,7 +94,20 @@ color: white;
 border-radius: 30px;
 padding: 10px;}
 
-.sale-image img{ width:100%;}
+.sale-image img{ width:100%;
+}
+
+.sale-image{position:relative}
+
+.sale-image__box{
+    border: solid black 2px;
+    width: fit-content;
+background-color: white;
+    padding: 2%;
+    position:absolute;
+    bottom:50%;
+    left:10%;
+}
 
 .course-card{
     width:200px;
