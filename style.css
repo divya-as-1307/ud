@@ -14,9 +14,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: solid black 1px;
-    gap:10px;
+    gap: 10px;
     align-items: center;
-    position:sticky;
+    position: sticky;
     top: 0;
     background-color: white;
     z-index: 1;
@@ -25,7 +25,7 @@ body {
 
 .navbar__s1__title {
     color: #A435F0;
-   
+
 }
 
 .navbar__s2 {
@@ -37,7 +37,7 @@ body {
     gap: 10px;
     align-items: center;
     font-size: 16px;
-   
+
 }
 
 .navbar__s2 input {
@@ -46,147 +46,189 @@ body {
     background-color: transparent;
 }
 
-.navbar__s2 input:focus{
+.navbar__s2 input:focus {
     outline: none;
-    
+
 }
 
-.navbar__s3{ 
+.navbar__s3 {
     display: flex;
     flex-wrap: wrap;
-gap: 20px;
-align-items: center;
+    gap: 20px;
+    align-items: center;
 }
 
-.my-learnings{
-    position:relative;
+.my-learnings {
+    position: relative;
     cursor: pointer;
 }
 
-.my-learnings__popup{
-    position:absolute;
-    padding:15px;
+.my-learnings__popup {
+    position: absolute;
+    padding: 15px;
     border: solid black 1px;
     background-color: white;
-    top:150%;
-width:100px;
-right:0;
-display:none;
+    top: 150%;
+    width: 100px;
+    right: 0;
+    display: none;
 }
 
-.my-learnings:hover .my-learnings__popup{
+.my-learnings:hover .my-learnings__popup {
     display: block;
 
 }
 
-.categories
-{
+.categories {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
     justify-content: space-around;
     padding: 10px;
     border-bottom: solid black 0.5px;
 }
 
-.categories p { background-color: #A435F0;
-color: white;
-border-radius: 30px;
-padding: 10px;}
-
-.sale-image img{ width:100%;
+.categories p {
+    background-color: #A435F0;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    border:#A435F0 solid 1px;
+    
 }
 
-.sale-image{position:relative}
+.categories p:hover{
+    transition: 2s;
+    background-color: transparent;
+    color:black;
+    border:#A435F0 solid 1px;
+    cursor: pointer;
+}
 
-.sale-image__box{
+.sale-image img {
+    width: 100%;
+}
+
+.sale-image {
+    position: relative
+}
+
+.sale-image__box {
     border: solid black 2px;
     width: fit-content;
-background-color: white;
+    background-color: white;
     padding: 2%;
-    position:absolute;
-    bottom:50%;
-    left:10%;
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
-.course-card{
-    width:200px;
-    Padding:10px;
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+
+    }
 
 }
 
-.course-card img{
-
-    width:210px;
-    height:200px;
+.course-card {
+    width: 200px;
+    Padding: 10px;
 
 }
 
-.recomended__container{
+.course-card img {
+
+    width: 210px;
+    height: 200px;
+
+}
+
+.recomended__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
-.topics{
+
+.topics {
     padding: 10px;
-    
+
 }
 
-.topics__container{
+.topics__container {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
-justify-content: space-around;
-margin-top:10px;
-    
-    
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 10px;
+
+
 }
 
-.topics__container p{border: solid grey 2px;
+.topics__container p {
+    border: solid grey 2px;
     padding: 10px;
-flex-grow: 1;
-flex-basis: 25%;
-}
-.popular{
-
-    padding:10px;
+    flex-grow: 1;
+    flex-basis: 25%;
 }
 
-.popular__container{
-    display:flex;
+.popular {
+
+    padding: 10px;
+}
+
+.popular__container {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top:10px;
-  
+    margin-top: 10px;
+
 }
 
-.footer{
-    padding: 30px;;
+.footer {
+    padding: 30px;
+    ;
     background-color: black;
     color: white;
 }
 
-.footer__two{
+.footer__two {
     display: flex;
     justify-content: space-between;
-    Padding:10px;
+    Padding: 10px;
 }
 
-.footer__one{
+.footer__one {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     padding-bottom: 10px;
-    
+
 }
 
-.footer__one p{margin: 20px;}
-
-
-.categories P:hover{
-background-color: #B860F1;
+.footer__one p {
+    margin: 20px;
 }
 
-.topics__container p:hover{border: solid black 2px;}
+
+.categories P:hover {
+    background-color: #E77EE7;
+    transition: 2.2s;
+}
+
+.topics__container p:hover {
+    border: solid black 2px;
+}
