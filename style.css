@@ -115,11 +115,11 @@ body {
 
 .sale-image__box {
     border: solid black 2px;
-    width: fit-content;
+    width: 35%;
     background-color: white;
     padding: 2%;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 10%;
     animation-name: zoom;
     animation-duration: 2s;
@@ -151,14 +151,14 @@ body {
 .course-card img {
 
     width: 210px;
-    height: 200px;
+    height: 200px; 
 
 }
 
 .recomended__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
@@ -197,6 +197,10 @@ body {
 
 }
 
+.course-card:hover h3{
+    cursor: pointer;
+}
+
 .footer {
     padding: 30px;
     ;
@@ -213,7 +217,6 @@ body {
 .footer__one {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 10px;
     padding-bottom: 10px;
 
@@ -231,4 +234,19 @@ body {
 
 .topics__container p:hover {
     border: solid black 2px;
+}
+
+
+@media screen and (max-width:800px) {
+body{
+font-size: 10px;
+}
+    
+}
+
+@media screen and (max-width:600px) {
+    .navbar__s3{
+        display: none;
+    }
+
 }
