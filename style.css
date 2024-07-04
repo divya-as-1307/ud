@@ -248,5 +248,12 @@ font-size: 10px;
     .navbar__s3{
         display: none;
     }
+.course-card{
+    flex-basis: 40%;
+}
 
+
+.sale-image__box{
+    width:50%;
+}
 }
