@@ -249,9 +249,12 @@ font-size: 10px;
         display: none;
     }
 .course-card{
+    flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 40%;
 }
+
+.categories{display:none;}
 
 
 .sale-image__box{
