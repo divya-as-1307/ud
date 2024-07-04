@@ -250,7 +250,7 @@ font-size: 10px;
     }
 .course-card{
     flex-wrap: wrap;
-    flex-basis: 200px;
+    flex-basis: 100px;
 }
 
 .categories{display:none;}
